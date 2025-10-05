@@ -1,12 +1,12 @@
 export interface Cliente {
-  id: number;
+  id?: number;
   nome: string;
   telefone: string;
   email: string;
 }
 
 export interface Reparacao {
-  id: number;
+  id?: number;
   clienteId: number;
   aparelho: string;
   problema: string;
@@ -17,7 +17,7 @@ export interface Reparacao {
 }
 
 export interface Produto {
-  id: number;
+  id?: number;
   nome: string;
   categoria: string;
   preco: number;
@@ -26,7 +26,7 @@ export interface Produto {
 }
 
 export interface Venda {
-  id: number;
+  id?: number;
   clienteId: number;
   produtos: { produtoId: number; quantidade: number }[];
   total: number;

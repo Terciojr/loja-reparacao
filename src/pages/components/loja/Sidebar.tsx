@@ -42,9 +42,10 @@ const ChartBarSquareIcon = () => (
 
 interface SidebarProps {
   isOpen: boolean;
+  className?: string;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
+const Sidebar: React.FC<SidebarProps> = ({ isOpen, className }) => {
   const location = useLocation();
 
   const menuItems = [
@@ -57,7 +58,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   ];
 
   return (
-    <aside className={`bg-gray-800 text-white h-screen transition-all duration-300 ${isOpen ? 'w-64' : 'w-20'}`}>
+    <aside className={`bg-gray-800 text-white h-screen transition-all duration-300 ${isOpen ? 'w-64' : 'w-20'} ${className}`}>
       <nav className="p-4">
         <ul className="space-y-2">
           {menuItems.map(item => (

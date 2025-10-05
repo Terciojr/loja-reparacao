@@ -76,8 +76,7 @@ const Relatorios: React.FC<RelatoriosProps> = ({ user, onLogout }) => {
             <h2 className="text-3xl font-bold text-gray-800">Relatórios e Estatísticas</h2>
             <div className="flex items-center gap-2 mt-4 sm:mt-0">
               <div className="flex bg-white rounded-lg shadow-sm p-1">
-                {({'7d': 'Últimos 7 dias', '30d': 'Últimos 30 dias', 'mes': 'Este Mês', 'ano': 'Este Ano'} as const) 
-                && Object.entries({'7d': '7 Dias', '30d': '30 Dias', 'mes': 'Mês', 'ano': 'Ano'}).map(([key, label]) => (
+                Object.entries({'7d': '7 Dias', '30d': '30 Dias', 'mes': 'Mês', 'ano': 'Ano'}).map(([key, label]) => (
                   <button 
                     key={key} 
                     onClick={() => setPeriodo(key as Periodo)}
