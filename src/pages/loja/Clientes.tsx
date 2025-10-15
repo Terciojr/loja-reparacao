@@ -14,9 +14,9 @@ interface ClientesProps {
 const Clientes: React.FC<ClientesProps> = ({ user, onLogout }) => {
   const [isSidebarOpen, setSidebarOpen] = useState(true);
   const [clientes, setClientes] = useState<Cliente[]>([
-    { id: 1, nome: 'João Silva', telefone: '(11) 99999-9999', email: 'joao@email.com' },
-    { id: 2, nome: 'Maria Santos', telefone: '(11) 98888-8888', email: 'maria@email.com' },
-    { id: 3, nome: 'Pedro Costa', telefone: '(21) 97777-7777', email: 'pedro@email.com' },
+    { id: 1, nome: 'João Silva', telefone: '+258 84 123 4567', email: 'joao@email.com' },
+    { id: 2, nome: 'Maria Santos', telefone: '+258 82 876 5432', email: 'maria@email.com' },
+    { id: 3, nome: 'Pedro Costa', telefone: '+258 86 987 6543', email: 'pedro@email.com' },
   ]);
   
   const [showForm, setShowForm] = useState(false);

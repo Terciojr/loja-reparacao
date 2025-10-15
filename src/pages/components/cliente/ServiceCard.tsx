@@ -5,7 +5,6 @@ interface Service {
   id: number;
   nome: string;
   descricao: string;
-  precoBase: number;
   tempoEstimado: string;
 }
 
@@ -30,10 +29,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         </h3>
         <p className="text-gray-600 mb-6">{service.descricao}</p>
         
-        <div className="flex justify-between items-center mb-6">
-          <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-            {service.precoBase.toFixed(2)} MT
-          </span>
+        <div className="flex justify-end items-center mb-6">
           <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full font-medium">
             ⏱️ {service.tempoEstimado}
           </span>

@@ -10,7 +10,7 @@ const Produtos: React.FC = () => {
       nome: 'Capinha iPhone 13',
       categoria: 'Acessórios',
       preco: 59.9,
-      imagem: '/placeholder-case.jpg',
+      imagem: 'https://images.unsplash.com/photo-1634627213961-348b03739558?q=80&w=1964&auto=format&fit=crop',
       descricao: 'Capinha protetora de alta qualidade para iPhone 13'
     },
     {
@@ -18,7 +18,7 @@ const Produtos: React.FC = () => {
       nome: 'Carregador Rápido USB-C',
       categoria: 'Carregadores',
       preco: 89.9,
-      imagem: '/placeholder-charger.jpg',
+      imagem: 'https://images.unsplash.com/photo-1608221933310-d000c40f389c?q=80&w=2070&auto=format&fit=crop',
       descricao: 'Carregador rápido de 20W com tecnologia PD'
     },
     {
@@ -26,7 +26,7 @@ const Produtos: React.FC = () => {
       nome: 'Película de Vidro Temperado',
       categoria: 'Acessórios',
       preco: 29.9,
-      imagem: '/placeholder-glass.jpg',
+      imagem: 'https://images.unsplash.com/photo-1598940969325-439688a40a23?q=80&w=1935&auto=format&fit=crop',
       descricao: 'Proteção premium para a tela do seu dispositivo'
     },
     {
@@ -34,7 +34,7 @@ const Produtos: React.FC = () => {
       nome: 'Fone Bluetooth',
       categoria: 'Áudio',
       preco: 159.9,
-      imagem: '/placeholder-headphones.jpg',
+      imagem: 'https://images.unsplash.com/photo-1606841837239-c6a38f6e0b87?q=80&w=1974&auto=format&fit=crop',
       descricao: 'Fones sem fio com cancelamento de ruído'
     },
     {
@@ -42,7 +42,7 @@ const Produtos: React.FC = () => {
       nome: 'Suporte Veicular',
       categoria: 'Acessórios',
       preco: 49.9,
-      imagem: '/placeholder-holder.jpg',
+      imagem: 'https://images.unsplash.com/photo-1616983992472-3523c63a1b4c?q=80&w=1974&auto=format&fit=crop',
       descricao: 'Suporte ajustável para carro com base magnética'
     },
     {
@@ -50,7 +50,7 @@ const Produtos: React.FC = () => {
       nome: 'Power Bank 10000mAh',
       categoria: 'Baterias',
       preco: 119.9,
-      imagem: '/placeholder-powerbank.jpg',
+      imagem: 'https://images.unsplash.com/photo-1618220413147-3335a8f4d7a4?q=80&w=1974&auto=format&fit=crop',
       descricao: 'Bateria portátil com carga rápida e múltiplas portas'
     },
   ];

@@ -56,7 +56,7 @@ const Relatorios: React.FC<RelatoriosProps> = ({ user, onLogout }) => {
   }, [periodo]);
 
   const kpiCards = [
-    { label: 'Faturamento Total', value: `R$ ${reportData.kpis.faturamento.toFixed(2)}`, icon: <CurrencyDollarIcon />, color: 'text-green-500' },
+    { label: 'Faturamento Total', value: `MT ${reportData.kpis.faturamento.toFixed(2)}`, icon: <CurrencyDollarIcon />, color: 'text-green-500' },
     { label: 'Vendas Realizadas', value: Math.round(reportData.kpis.vendas), icon: <ShoppingCartIcon />, color: 'text-blue-500' },
     { label: 'Novos Clientes', value: Math.round(reportData.kpis.novosClientes), icon: <UsersIcon />, color: 'text-indigo-500' },
     { label: 'Reparos Concluídos', value: Math.round(reportData.kpis.reparosConcluidos), icon: <WrenchIcon />, color: 'text-yellow-500' },
@@ -76,7 +76,7 @@ const Relatorios: React.FC<RelatoriosProps> = ({ user, onLogout }) => {
             <h2 className="text-3xl font-bold text-gray-800">Relatórios e Estatísticas</h2>
             <div className="flex items-center gap-2 mt-4 sm:mt-0">
               <div className="flex bg-white rounded-lg shadow-sm p-1">
-                Object.entries({'7d': '7 Dias', '30d': '30 Dias', 'mes': 'Mês', 'ano': 'Ano'}).map(([key, label]) => (
+                {Object.entries({'7d': 'Últimos 7 dias', '30d': 'Últimos 30 dias', 'mes': 'Este Mês', 'ano': 'Este Ano'}).map(([key, label]) => (
                   <button 
                     key={key} 
                     onClick={() => setPeriodo(key as Periodo)}

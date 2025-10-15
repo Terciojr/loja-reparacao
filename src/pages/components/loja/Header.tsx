@@ -11,12 +11,11 @@ interface HeaderProps {
   user: { nome: string; tipo: string };
   onLogout: () => void;
   onToggleSidebar: () => void;
-  className?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title, user, onLogout, onToggleSidebar, className }) => {
+const Header: React.FC<HeaderProps> = ({ title, user, onLogout, onToggleSidebar }) => {
   return (
-    <header className={`bg-white shadow-md text-gray-800 p-4 flex justify-between items-center ${className || ''}`}>
+    <header className="bg-white shadow-md text-gray-800 p-4 flex justify-between items-center">
       <div className="flex items-center gap-4">
         <button onClick={onToggleSidebar} className="text-gray-500 hover:text-gray-800">
             <Bars3Icon />

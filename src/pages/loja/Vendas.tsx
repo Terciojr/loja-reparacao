@@ -21,8 +21,8 @@ const Vendas: React.FC<VendasProps> = ({ user, onLogout }) => {
   ]);
 
   const [clientes, setClientes] = useState<Cliente[]>([
-    { id: 1, nome: 'João Silva', telefone: '(11) 99999-9999', email: 'joao@email.com' },
-    { id: 2, nome: 'Maria Santos', telefone: '(11) 98888-8888', email: 'maria@email.com' },
+    { id: 1, nome: 'João Silva', telefone: '+258 84 123 4567', email: 'joao@email.com' },
+    { id: 2, nome: 'Maria Santos', telefone: '+258 82 876 5432', email: 'maria@email.com' },
   ]);
 
   const [produtos] = useState<Produto[]>([
@@ -39,7 +39,7 @@ const Vendas: React.FC<VendasProps> = ({ user, onLogout }) => {
     { header: 'ID', accessor: 'id' },
     { header: 'Cliente', accessor: 'cliente' },
     { header: 'Produtos', accessor: 'produtos' },
-    { header: 'Total (R$)', accessor: 'total' },
+    { header: 'Total (MT)', accessor: 'total' },
     { header: 'Data', accessor: 'data' },
   ];
 
@@ -66,8 +66,8 @@ const Vendas: React.FC<VendasProps> = ({ user, onLogout }) => {
       ...venda,
       cliente: cliente ? <Link to={`/loja/clientes/${cliente.id}`} className="text-blue-600 hover:underline">{cliente.nome}</Link> : 'N/A',
       produtos: produtosVenda,
-      total: `R$ ${venda.total.toFixed(2)}`,
-      data: venda.data.toLocaleDateString('pt-BR'),
+      total: `MT ${venda.total.toFixed(2)}`,
+      data: venda.data.toLocaleDateString('pt-MZ'),
     };
   });
 

@@ -113,7 +113,7 @@ const SaleForm: React.FC<SaleFormProps> = ({ clientes, produtos, onSubmit, onCan
                     <option value="">Selecione um produto</option>
                     {produtos.map(produto => (
                       <option key={produto.id} value={produto.id}>
-                        {produto.nome} - R$ {produto.preco.toFixed(2)}
+                        {produto.nome} - MT {produto.preco.toFixed(2)}
                       </option>
                     ))}
                   </select>
@@ -133,7 +133,7 @@ const SaleForm: React.FC<SaleFormProps> = ({ clientes, produtos, onSubmit, onCan
           <div className="border-t pt-4 mt-6">
             <div className="flex justify-between items-center text-2xl font-bold text-gray-800">
               <span>Total:</span>
-              <span>R$ {calculateTotal().toFixed(2)}</span>
+              <span>MT {calculateTotal().toFixed(2)}</span>
             </div>
           </div>
 

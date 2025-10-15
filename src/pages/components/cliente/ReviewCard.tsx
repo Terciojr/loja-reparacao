@@ -26,7 +26,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
   };
 
   const formatDate = (date: Date) => {
-    return new Intl.DateTimeFormat('pt-BR').format(date);
+    return new Intl.DateTimeFormat('pt-MZ').format(date);
   };
 
   return (

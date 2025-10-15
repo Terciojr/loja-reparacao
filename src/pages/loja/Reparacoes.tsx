@@ -21,8 +21,8 @@ const Reparacoes: React.FC<ReparacoesProps> = ({ user, onLogout }) => {
   ]);
 
   const [clientes, setClientes] = useState<Cliente[]>([
-    { id: 1, nome: 'João Silva', telefone: '(11) 99999-9999', email: 'joao@email.com' },
-    { id: 2, nome: 'Maria Santos', telefone: '(11) 98888-8888', email: 'maria@email.com' },
+    { id: 1, nome: 'João Silva', telefone: '+258 84 123 4567', email: 'joao@email.com' },
+    { id: 2, nome: 'Maria Santos', telefone: '+258 82 876 5432', email: 'maria@email.com' },
   ]);
 
   const [showRepairForm, setShowRepairForm] = useState(false);
@@ -35,7 +35,7 @@ const Reparacoes: React.FC<ReparacoesProps> = ({ user, onLogout }) => {
     { header: 'Cliente', accessor: 'cliente' },
     { header: 'Aparelho', accessor: 'aparelho' },
     { header: 'Status', accessor: 'status' },
-    { header: 'Custo (R$)', accessor: 'custo' },
+    { header: 'Custo (MT)', accessor: 'custo' },
     { header: 'Data Entrada', accessor: 'dataEntrada' },
     { header: 'Ações', accessor: 'acoes' },
   ];
@@ -84,8 +84,8 @@ const Reparacoes: React.FC<ReparacoesProps> = ({ user, onLogout }) => {
       ...reparacao,
       cliente: cliente ? <Link to={`/loja/clientes/${cliente.id}`} className="text-blue-600 hover:underline">{cliente.nome}</Link> : 'N/A',
       status: getStatusBadge(reparacao.status),
-      custo: `R$ ${reparacao.custo.toFixed(2)}`,
-      dataEntrada: reparacao.dataEntrada.toLocaleDateString('pt-BR'),
+      custo: `MT ${reparacao.custo.toFixed(2)}`,
+      dataEntrada: reparacao.dataEntrada.toLocaleDateString('pt-MZ'),
       acoes: (
         <div className="flex gap-4">
           <button onClick={() => handleEdit(reparacao)} className="text-blue-600 hover:text-blue-800 font-medium">Editar</button>

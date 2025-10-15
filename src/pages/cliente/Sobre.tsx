@@ -31,22 +31,22 @@ const Sobre: React.FC = () => {
       <main className="flex-1 py-16 sm:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">Nossa Paixão por Tecnologia</h1>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">Conheça a história e os valores que nos movem.</p>
+            <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">Sobre o Nosso Projeto</h1>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">Conheça a equipe por trás da TechRepair.</p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Nossa História</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Quem Somos</h2>
               <div className="space-y-4 text-gray-700 text-lg">
                 <p>
-                  Fundada em 2010, a TechRepair nasceu de um pequeno negócio familiar com a missão de oferecer serviços de reparo com máxima qualidade e transparência. 
+                  A TechRepair é um projeto acadêmico desenvolvido por um grupo de estudantes apaixonados por tecnologia da Universidade Eduardo Mondlane.
                 </p>
                 <p>
-                  Com o passar dos anos, crescemos e nos tornamos uma referência na comunidade, expandindo nossos serviços sem nunca perder o compromisso com a satisfação total de nossos clientes.
+                  Somos <strong>Tercio Alfredo Manjate Jr</strong>, <strong>Enia Boavida Sitoe</strong> e <strong>Edson Eugenio Chichava</strong>, estudantes do curso de Licenciatura em Informática na Faculdade de Ciências.
                 </p>
                 <p>
-                  Hoje, nossa equipe de técnicos especializados está pronta para oferecer uma vasta gama de soluções e acessórios, atendendo a todas as suas necessidades tecnológicas.
+                  Este projeto foi desenvolvido como parte de uma das nossas avaliações semestrais, com o objetivo de aplicar os conhecimentos adquiridos para criar uma solução prática e funcional.
                 </p>
               </div>
             </div>

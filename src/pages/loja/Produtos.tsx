@@ -40,7 +40,7 @@ const Produtos: React.FC<ProdutosProps> = ({ user, onLogout }) => {
     setProdutos(produtos.filter(p => p.id !== id));
   };
 
-  const handleSubmit = (produto: Produto, _imagemFile?: File) => {
+  const handleSubmit = (produto: Produto, imagemFile?: File) => {
     // Lógica para lidar com o upload do arquivo de imagem (imagemFile)
     // Por enquanto, apenas salvamos a URL (seja de um objeto ou string)
     if (produto.id) {

@@ -9,9 +9,9 @@ const ArrowLeftIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h
 
 // --- Dados Simulados (Em um app real, viria de uma API/Context) ---
 const allClientes: Cliente[] = [
-  { id: 1, nome: 'João Silva', telefone: '(11) 99999-9999', email: 'joao@email.com' },
-  { id: 2, nome: 'Maria Santos', telefone: '(11) 98888-8888', email: 'maria@email.com' },
-  { id: 3, nome: 'Pedro Costa', telefone: '(21) 97777-7777', email: 'pedro@email.com' },
+  { id: 1, nome: 'João Silva', telefone: '+258 84 123 4567', email: 'joao@email.com' },
+  { id: 2, nome: 'Maria Santos', telefone: '+258 82 876 5432', email: 'maria@email.com' },
+  { id: 3, nome: 'Pedro Costa', telefone: '+258 86 987 6543', email: 'pedro@email.com' },
 ];
 
 const allReparacoes: Reparacao[] = [
@@ -99,8 +99,8 @@ const ClienteDetalhes: React.FC<ClienteDetalhesProps> = ({ user, onLogout }) => 
                       {getStatusBadge(reparo.status)}
                     </div>
                     <div className="flex justify-between items-end mt-2 text-sm">
-                      <p className="text-gray-500">Entrada: {reparo.dataEntrada.toLocaleDateString('pt-BR')}</p>
-                      <p className="font-semibold text-lg">R$ {reparo.custo.toFixed(2)}</p>
+                      <p className="text-gray-500">Entrada: {reparo.dataEntrada.toLocaleDateString('pt-MZ')}</p>
+                      <p className="font-semibold text-lg">MT {reparo.custo.toFixed(2)}</p>
                     </div>
                   </div>
                 )) : <p className="text-gray-500">Nenhum reparo encontrado.</p>}
@@ -116,9 +116,9 @@ const ClienteDetalhes: React.FC<ClienteDetalhesProps> = ({ user, onLogout }) => 
                     <div className="flex justify-between items-start mb-2">
                       <div>
                         <p className="font-bold text-gray-800">Venda #{venda.id}</p>
-                        <p className="text-sm text-gray-500">Data: {venda.data.toLocaleDateString('pt-BR')}</p>
+                        <p className="text-sm text-gray-500">Data: {venda.data.toLocaleDateString('pt-MZ')}</p>
                       </div>
-                      <p className="font-semibold text-lg">R$ {venda.total.toFixed(2)}</p>
+                      <p className="font-semibold text-lg">MT {venda.total.toFixed(2)}</p>
                     </div>
                     <ul className="text-sm text-gray-600 list-disc list-inside">
                       {venda.produtos.map(item => {

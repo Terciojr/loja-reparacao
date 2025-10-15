@@ -14,28 +14,28 @@ const Avaliacoes: React.FC = () => {
   const [reviews, setReviews] = useState([
     {
       id: 1,
-      cliente: 'João Silva',
+      cliente: 'Júlio Muianga',
       nota: 5,
       comentario: 'Serviço excelente! Recuperaram todos os dados do meu celular que havia quebrado a tela. Super recomendo!',
       data: new Date('2023-04-15')
     },
     {
       id: 2,
-      cliente: 'Maria Santos',
+      cliente: 'Mariana Cossa',
       nota: 4,
       comentario: 'Atendimento muito bom e preço justo. Só não dou 5 estrelas porque demorou um pouco mais que o previsto.',
       data: new Date('2023-04-10')
     },
     {
       id: 3,
-      cliente: 'Pedro Costa',
+      cliente: 'Pedro Macamo',
       nota: 5,
       comentario: 'Comprei uma capinha e película e adorei a qualidade dos produtos. Chegou rapidinho!',
       data: new Date('2023-04-05')
     },
     {
       id: 4,
-      cliente: 'Ana Oliveira',
+      cliente: 'Ana Chissano',
       nota: 5,
       comentario: 'Troquei a bateria do meu iPhone e agora está como novo. Profissionais muito competentes!',
       data: new Date('2023-03-28')

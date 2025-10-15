@@ -21,7 +21,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
 
   // --- Dados Simulados ---
   const stats = [
-    { label: 'Faturamento do Mês', value: 'R$ 12.580', icon: <CurrencyDollarIcon />, color: 'from-green-500 to-green-400' },
+    { label: 'Faturamento do Mês', value: 'MT 12.580', icon: <CurrencyDollarIcon />, color: 'from-green-500 to-green-400' },
     { label: 'Total de Clientes', value: '152', icon: <UsersIcon />, color: 'from-blue-500 to-blue-400' },
     { label: 'Reparações em Curso', value: '8', icon: <WrenchIcon />, color: 'from-yellow-500 to-yellow-400' },
     { label: 'Produtos com Estoque Baixo', value: '3', icon: <ArchiveBoxIcon />, color: 'from-red-500 to-red-400' },
@@ -35,7 +35,7 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
   };
 
   const atividadesRecentes = [
-    { tipo: 'venda', descricao: 'Venda #1024 para João Silva', valor: 'R$ 129,90' },
+    { tipo: 'venda', descricao: 'Venda #1024 para João Silva', valor: 'MT 129,90' },
     { tipo: 'reparo', descricao: 'Reparo de iPhone 13 (tela) concluído', status: 'Concluído' },
     { tipo: 'cliente', descricao: 'Novo cliente cadastrado: Ana Oliveira' },
     { tipo: 'reparo', descricao: 'Novo reparo: Samsung S22 (bateria)', status: 'Pendente' },

@@ -36,10 +36,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 tracking-wider uppercase">Contato</h4>
             <ul className="space-y-3 text-gray-400">
-              <li>Rua das Flores, 123</li>
-              <li>São Paulo - SP</li>
-              <li>(11) 9999-9999</li>
-              <li>contato@techrepair.com</li>
+              <li>Av. 25 de Setembro, 1234</li>
+              <li>Maputo, Moçambique</li>
+              <li>+258 84 123 4567</li>
+              <li>contato@techrepair.co.mz</li>
             </ul>
           </div>
 

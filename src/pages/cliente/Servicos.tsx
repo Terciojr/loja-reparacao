@@ -9,42 +9,36 @@ const Servicos: React.FC = () => {
       id: 1,
       nome: 'Troca de Tela',
       descricao: 'Substituição profissional da tela do seu dispositivo com peças de qualidade.',
-      precoBase: 150,
       tempoEstimado: '2-3 horas'
     },
     {
       id: 2,
       nome: 'Substituição de Bateria',
       descricao: 'Troca da bateria para restaurar a autonomia do seu dispositivo.',
-      precoBase: 80,
       tempoEstimado: '1-2 horas'
     },
     {
       id: 3,
       nome: 'Reparo de Conectores',
       descricao: 'Conserto de portas de carregamento e conectores danificados.',
-      precoBase: 60,
       tempoEstimado: '1-2 horas'
     },
     {
       id: 4,
       nome: 'Limpeza Interna',
       descricao: 'Limpeza completa interna para melhorar o desempenho do dispositivo.',
-      precoBase: 40,
       tempoEstimado: '1 hora'
     },
     {
       id: 5,
       nome: 'Recuperação de Dados',
       descricao: 'Recuperação de dados importantes de dispositivos danificados.',
-      precoBase: 120,
       tempoEstimado: '24-48 horas'
     },
     {
       id: 6,
       nome: 'Atualização de Software',
       descricao: 'Instalação de atualizações e otimização do sistema.',
-      precoBase: 30,
       tempoEstimado: '30-60 minutos'
     },
   ];

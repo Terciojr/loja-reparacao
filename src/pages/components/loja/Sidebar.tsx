@@ -39,18 +39,24 @@ const ChartBarSquareIcon = () => (
     </svg>
 );
 
+const IdentificationIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm0 4.5a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0z" />
+    </svg>
+);
+
 
 interface SidebarProps {
   isOpen: boolean;
-  className?: string;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ isOpen, className }) => {
+const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   const location = useLocation();
 
   const menuItems = [
     { path: '/loja/dashboard', label: 'Dashboard', icon: <ChartPieIcon /> },
     { path: '/loja/clientes', label: 'Clientes', icon: <UsersIcon /> },
+    { path: '/loja/funcionarios', label: 'Funcionários', icon: <IdentificationIcon /> },
     { path: '/loja/reparacoes', label: 'Reparações', icon: <WrenchIcon /> },
     { path: '/loja/produtos', label: 'Produtos', icon: <ArchiveBoxIcon /> },
     { path: '/loja/vendas', label: 'Vendas', icon: <CurrencyDollarIcon /> },
@@ -58,7 +64,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, className }) => {
   ];
 
   return (
-    <aside className={`bg-gray-800 text-white h-screen transition-all duration-300 ${isOpen ? 'w-64' : 'w-20'} ${className}`}>
+    <aside className={`bg-gray-800 text-white h-screen transition-all duration-300 ${isOpen ? 'w-64' : 'w-20'}`}>
       <nav className="p-4">
         <ul className="space-y-2">
           {menuItems.map(item => (
